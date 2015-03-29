@@ -118,7 +118,12 @@ $(document).ready(function(){
 	{
 		console.log("DEBUG: Comparing old "+oldDistance+" with new "+distance);
 
-		if (guessCount<=1) //If its the first guess, no comparrison comment will be made.
+		if (distance==0) 
+		{
+			return("GOT IT")
+		}
+
+		else if (guessCount<=1) //If its the first guess, no comparrison comment will be made.
 		{
 			oldDistance=distance;
 			return(" FIRST SHOT ");
