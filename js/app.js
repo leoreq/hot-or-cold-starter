@@ -29,6 +29,7 @@ $(document).ready(function(){
   	function newGame() 
   	{
   		guessCount=0;
+  		$("#userGuess").val("");
   		$('#count').text(guessCount);
   		$('#feedback').text('Make your Guess!');
   		$("#guessList li").remove();
